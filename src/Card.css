@@ -1,0 +1,25 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card {
+    margin: 0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    width: fit-content;
+    transition: 150ms;
+}
+
+.card:hover {
+    transform: translate(0, -10px);
+}
+
+.card-img {
+    width: 300px;
+}
