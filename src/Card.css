@@ -12,7 +12,7 @@
     padding: 20px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px black;
-    width: fit-content;
+    width: 400px;
     transition: 150ms;
 }
 
@@ -21,5 +21,17 @@
 }
 
 .card-img {
+    display: block;
     width: 300px;
+    margin: 0 auto;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card-description {
+    text-align: center;
 }
