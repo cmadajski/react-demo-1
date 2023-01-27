@@ -1,0 +1,35 @@
+.counter {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+    width: fit-content;
+}
+
+.counter--decrease, .counter--increase {
+    padding: 10px;
+    font-weight: bold;
+    transition: 150ms;
+}
+
+.counter--decrease {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.counter--increase {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.counter--decrease:hover, .counter--increase:hover {
+    background-color: rgb(200, 200, 200);
+    cursor: pointer;
+}
+
+.counter--number {
+    padding: 10px;
+}
