@@ -4,11 +4,11 @@ export default function Counter(props) {
     const [num, setNum] = React.useState(props.num)
 
     function incrementNum() {
-        setNum(num + 1)
+        setNum((prevNum) => prevNum + 1)
     }
 
     function decrementNum() {
-        setNum(num - 1)
+        setNum((prevNum) => prevNum - 1)
     }
 
     return (
