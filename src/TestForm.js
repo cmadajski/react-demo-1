@@ -22,8 +22,8 @@ export default function TestForm(props) {
 
     return (
         <form>
-            <input type="text" name="firstName" placeholder="First name" onChange={updateFormOnChange} />
-            <input type="text" name="lastName" placeholder="Last name" onChange={updateFormOnChange} />
+            <input type="text" name="firstName" placeholder="First name" onChange={updateFormOnChange} value={formData.firstName} />
+            <input type="text" name="lastName" placeholder="Last name" onChange={updateFormOnChange} value={formData.lastName} />
         </form>
     )
 }

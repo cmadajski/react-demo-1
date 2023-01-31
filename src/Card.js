@@ -2,6 +2,7 @@ import React from "react"
 
 export default function Card(props) {
     const [currentAvailability, setAvailability] = React.useState(props.availability)
+    const [selected, setSelected] = React.useState(props.selected)
 
     function changeAvailability() {
         if (currentAvailability === "Available") {
@@ -10,8 +11,19 @@ export default function Card(props) {
             setAvailability("Available")
         }
     }
+
+    function changeSelected() {
+        setSelected((prevValue) => !prevValue)
+
+    }
+
+
+    const cardStyle = {
+        backgroundColor: selected ? "purple" : "orange"
+    }
+
     return (
-        <div className="card" onClick={changeAvailability}>
+        <div className="card" onClick={changeSelected} style={cardStyle}>
             <img className="card-img" src={props.img} />
             <p className="card-title">{props.title}</p>
             <p className="card-description">{props.description}</p>
