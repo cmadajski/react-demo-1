@@ -8,6 +8,7 @@ export default function Navbar() {
             <div id="nav-links">
                 <Link to="/">Home</Link>
                 <Link to="/form">Form</Link>
+                <Link to="/slideshow">Slideshow</Link>
             </div>
         </nav>
     )

@@ -5,14 +5,6 @@ export default function Card(props) {
     const [currentAvailability, setAvailability] = React.useState(props.availability)
     const [selected, setSelected] = React.useState(props.selected)
 
-    function changeAvailability() {
-        if (currentAvailability === "Available") {
-            setAvailability("Not Available")
-        } else {
-            setAvailability("Available")
-        }
-    }
-
     function changeSelected() {
         setSelected((prevValue) => !prevValue)
     }
@@ -22,9 +14,14 @@ export default function Card(props) {
         backgroundColor: selected ? "green" : "white"
     }
 
+    const selectStyle = {
+        backgroundColor: selected ? "green" : "white"
+    }
+
     return (
-        <div className="card" onClick={changeSelected} style={cardStyle}>
+        <div className="card" onClick={changeSelected}>
             <img className="card-img" src={props.img} />
+            <div className="select-box" style={selectStyle}></div>
             <p className="card-title">{props.title}</p>
             <p className="card-description">{props.description}</p>
             <p className="card-availability">{currentAvailability}</p>
