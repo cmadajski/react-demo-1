@@ -1,13 +1,13 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 export default function Navbar() {
     return (
         <nav>
             <h1>React Demo</h1>
             <div id="nav-links">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <Link to="/">Home</Link>
+                <Link to="/form">Form</Link>
             </div>
         </nav>
     )
