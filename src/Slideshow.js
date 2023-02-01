@@ -10,10 +10,11 @@ const Slideshow = (props) => {
 
     const currImgData = allImgData[currImgId]
 
-
     return (
         <div className="slideshow-container">
             <div className="current-img-container">
+                <div className="arrow arrow--backward">&larr;</div>
+                <div className="arrow arrow--forward">&rarr;</div>
                 <img className="current-img" src={currImgData.src} />
                 <p className="caption">{currImgData.caption}</p>
             </div>

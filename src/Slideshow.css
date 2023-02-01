@@ -5,6 +5,7 @@
 }
 
 .current-img-container {
+    position: relative;
     width: 50%;
     padding: 20px;
     border-radius: 20px;
@@ -18,7 +19,35 @@
 
 .caption {
     width: 100%;
+    margin: 15px 0 0 0;
     text-align: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+/* backward and forward buttons */
+
+.arrow {
+    position: absolute;
+    font-size: 48px;
+    padding: 0px 5px 5px 5px;
+    top: 40%;
+    color: rgb(200,200,200);
+    background-color: rgb(20,20,20);
+    border-radius: 10px;
+    transition: 200ms;
+}
+
+.arrow:hover {
+    color: rgb(240,240,240);
+    background-color: rgb(40, 40, 40);
+    cursor: pointer;
+}
+
+.arrow--backward {
+    left: 40px;
+}
+
+.arrow--forward {
+    right: 40px;
 }
