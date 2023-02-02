@@ -7,8 +7,6 @@ import Slideshow from "./Slideshow"
 import { imgData } from "./imgData"
 import "./App.css"
 
-console.log(imgData)
-
 const App = (props) => {
 
     return (

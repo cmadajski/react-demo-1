@@ -18,12 +18,20 @@
     transition: 200ms;
 }
 
-.caption {
+.fadein {
+    opacity: 0;
+    animation: 500ms ease 200ms 1 forwards fadein;
+}
+
+.fadeout {
+    opacity: 1;
+    animation: 500ms ease 0s 1 forwards fadeout;
+}
+
+.caption, .img-date {
     width: 100%;
     margin: 15px 0 0 0;
     text-align: center;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     transition: 200ms;
 }
 
@@ -37,6 +45,7 @@
     color: rgb(200,200,200);
     background-color: rgb(20,20,20);
     border-radius: 10px;
+    z-index: 10;
     transition: 200ms;
 }
 
@@ -52,4 +61,16 @@
 
 .arrow--forward {
     right: 40px;
+}
+
+/* img animations */
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
