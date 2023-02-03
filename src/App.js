@@ -4,6 +4,7 @@ import Template from "./Template"
 import Home from "./Home"
 import TestForm from "./TestForm"
 import Slideshow from "./Slideshow"
+import Learn from "./Learn"
 import { imgData } from "./imgData"
 import "./App.css"
 
@@ -16,6 +17,7 @@ const App = (props) => {
                     <Route index element={<Home />} />
                     <Route path="form" element={<TestForm />} />
                     <Route path="slideshow" element={<Slideshow imgData={imgData} start={1} />}></Route>
+                    <Route path="learn" element={<Learn />} />
                     <Route path="*" />
                 </Route>
             </Routes>

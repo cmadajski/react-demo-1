@@ -1,0 +1,40 @@
+.learn--container {
+    padding: 20px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.learn--question {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.learn--answers {
+    text-align: center;
+}
+
+.learn--answer {
+    width: 80%;
+    border: 1px solid rgb(20,20,20);
+    margin: 20px auto;
+    padding: 20px;
+    transition: 100ms;
+}
+
+.learn--answer:hover {
+    background-color: rgb(149, 239, 255);
+    cursor: pointer;
+}
+
+.selected {
+    background-color: rgb(68, 227, 255);
+}
+
+.submit {
+    display: block;
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 18px;
+}
